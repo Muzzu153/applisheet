@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Tracker</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Job tracker</h1>
+      <p id="status" role="status">Checking setup…</p>
+
+      <div class="actions">
+        <button id="setup" type="button" hidden>Sign in and create my sheet</button>
+        <button id="open" type="button" hidden>Open my sheet</button>
+        <button id="sample" type="button" hidden class="secondary">Add a sample row</button>
+        <button id="signout" type="button" hidden class="link">Sign out</button>
+      </div>
+
+      <details>
+        <summary>Setup info</summary>
+        <p>Add this redirect URI to your Google OAuth client:</p>
+        <code id="redirect"></code>
+      </details>
+    </main>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
